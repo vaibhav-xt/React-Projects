@@ -1,0 +1,19 @@
+.header {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 56, 0);
+    border-bottom: 2px solid green;
+    height: 50px;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    height: calc(100vh - 90px);
+}

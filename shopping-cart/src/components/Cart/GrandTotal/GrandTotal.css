@@ -1,0 +1,78 @@
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.total-container a {
+    color: blue;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+
+.delivery-availibilty {
+    max-width: 20rem;
+    width: 100%;
+}
+
+.cash-summary {
+    max-width: 30rem;
+    width: 100%;
+}
+
+.location,
+.status,
+.status div,
+.summary div,
+.OrderTotal div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.available,
+.cash-summary h3 {
+    font-size: 1.3rem;
+    padding: 0 0 2rem 0;
+}
+
+.location {
+    border-bottom: 1px solid black;
+}
+
+.location input {
+    width: 100%;
+    background-color: transparent;
+    border: 0px solid;
+    outline: none;
+}
+
+.status {
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.summary {
+    color: gray;
+}
+
+.summary div,
+.OrderTotal div {
+    margin-bottom: 2rem;
+}
+
+.total {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.OrderTotal a:nth-child(2) {
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 9999px;
+    padding: 1rem 2rem 1rem 2rem;
+}

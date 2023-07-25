@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.App {
+    background-color: purple;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding-top: 4rem;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+    background-color: white;
+}
+
+input {
+    height: 2rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0 .5rem 0 .5rem;
+    border: none;
+}
+
+input::placeholder {
+    letter-spacing: .1rem;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+button {
+    border: none;
+    height: 2rem;
+    background-color: skyblue;
+    cursor: pointer;
+    padding: .5rem;
+    width: 2.5rem;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #0084ff;
+    color: white;
+}
+
+.list-todo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cards {
+    cursor: pointer;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: skyblue;
+}
+
+.cards p:first-child {
+    width: 2rem;
+}
+
+i {
+    cursor: pointer;
+}
+
+.cards p {
+    width: 100%;
+}

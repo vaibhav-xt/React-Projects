@@ -1,0 +1,67 @@
+.cart-container {
+    background-color: whitesmoke;
+    padding: 1rem 0 1rem 0;
+}
+
+.card-container-box {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem 0 2rem;
+}
+
+.discount-card {
+    text-align: center;
+}
+
+.discount-card p {
+    width: 100%;
+    background-color: #0303a5;
+    padding: 1rem 0 1rem 0;
+    color: white;
+}
+
+.cart-container h1 {
+    margin: 4rem 0 2rem 0;
+}
+
+.shopping-list {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.shopping-list-title {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: gray;
+    border-bottom: 1px solid #80808083;
+}
+
+.shopping-list-title h5 {
+    text-align: center;
+}
+
+.shopping-list-title h5:first-child {
+    width: 50%;
+    text-align: start;
+}
+
+.shopping-list-title h5:nth-child(2) {
+    width: 16.6%;
+}
+
+.shopping-list-title h5:nth-child(3) {
+    width: 16.6%;
+}
+
+.shopping-list-title h5:nth-child(4) {
+    width: 16.6%;
+}
+
+@media (max-width: 500px) {
+
+    .discount-card,
+    .shopping-list {
+        display: none;
+    }
+}
