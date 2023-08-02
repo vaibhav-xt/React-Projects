@@ -1,0 +1,54 @@
+.page1-container,
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.page1-container button {
+    border: none;
+    border-radius: 9999px;
+    padding: .5rem 1rem .5rem 1rem;
+    font-weight: bold;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.react-chatbot-kit-chat-container {
+    width: 400px !important;
+}
+
+.react-chatbot-kit-chat-message-container {
+    overflow: auto !important;
+}
+
+.react-chatbot-kit-chat-bot-message {
+    margin-left: 0 !important;
+}
+
+.page3-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+}
+
+.page3-container .result {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.page3-container .result span {
+    color: rgb(30, 255, 0);
+    font-weight: bold;
+    text-transform: capitalize;
+}

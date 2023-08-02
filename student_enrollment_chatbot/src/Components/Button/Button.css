@@ -1,0 +1,40 @@
+.btn-container {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+
+.btn-handler {
+    position: relative;
+    background-color: #009efa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-handler::after {
+    transition: all 0.9s ease-in-out;
+    content: "";
+    width: 10px;
+    background-color: #009efa;
+    height: 10px;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: -2;
+    right: -5px;
+}
+
+.btn-handler:hover {
+    background-color: #009efab6;
+    box-shadow: 0px 0px 3px #009efab6;
+}
+
+button.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
