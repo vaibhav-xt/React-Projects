@@ -7,11 +7,17 @@ const initialState = {
     isLoading: false,
     videosData: [],
     isError: null,
+    word: ""
 };
 
 const videosSlice = createSlice({
     name: "videos",
     initialState,
+    reducers: {
+        selectedKeyword(state, action) {
+            state.word = action.payload;
+        }
+    },
     extraReducers: (builder) => {
         builder.addCase(fetchVideos.pending, (state) => {
             state.isLoading = true;
@@ -19,7 +25,7 @@ const videosSlice = createSlice({
         });
         builder.addCase(fetchVideos.fulfilled, (state, action) => {
             state.isLoading = false;
-            state.videosData = action.payload;
+            state.videosData = action.payload; // Replace push with assignment
         });
         builder.addCase(fetchVideos.rejected, (state, action) => {
             state.isLoading = false;
@@ -35,7 +41,7 @@ export const fetchVideos = createAsyncThunk('fetchVideos', async (keyword) => {
             q: keyword
         }
     });
-    return response.data.pageInfo.totalResults;
+    return response.data.pageInfo.totalResults; // Use response.data.items to get the videos
 });
 
 const youtubeAPI = axios.create({
@@ -48,5 +54,5 @@ const youtubeAPI = axios.create({
     headers: {}
 });
 
-export const { selectedKeyword } = videosSlice.actions;
+export const { selectedKeyword } = videosSlice.actions; // Use .actions instead of .reducer
 export default videosSlice.reducer;
