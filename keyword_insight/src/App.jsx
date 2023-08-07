@@ -36,7 +36,8 @@ const Container = styled.div`
   div{
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     flex-wrap: wrap;
   }
 
