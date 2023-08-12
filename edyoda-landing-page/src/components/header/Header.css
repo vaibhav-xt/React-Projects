@@ -1,0 +1,50 @@
+.header,
+.header-left,
+.header-right,
+.header-left nav,
+.header-left li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding: 0 80px;
+    background-color: var(--text-white);
+    height: 80px;
+    font-weight: bold;
+}
+
+.header img {
+    cursor: pointer;
+}
+
+/* Header Left  */
+.header-left img {
+    height: 45px;
+}
+
+.header-left,
+.header-left nav,
+.header-right {
+    gap: 64px;
+}
+
+.header-left nav {
+    list-style: none;
+    cursor: pointer;
+}
+
+.header-left nav img {
+    width: 20px;
+}
+
+/* Header Right  */
+.header-right button {
+    background: var(--primary-gradient);
+    color: var(--text-white);
+    padding: 10px 42px;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+}

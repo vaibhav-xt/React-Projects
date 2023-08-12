@@ -1,0 +1,271 @@
+.hero-right {
+    width: 549px;
+    padding: calc(var(--text-size) * 2);
+    background-color: var(--text-white);
+    border-radius: 10px;
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.form-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-top div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-top div p:first-child {
+    color: var(--text-white);
+    display: grid;
+    place-items: center;
+    height: 38px;
+    width: 38px;
+    background-color: var(--primary-blue);
+    border-radius: 100%;
+    margin-bottom: 10px;
+    font-size: var(--text-size);
+    font-weight: bold;
+}
+
+.hero-right h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.form-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subscription-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid var(--text-dark-gray);
+    border-radius: 4px;
+    position: relative;
+    height: 65px;
+    cursor: pointer;
+}
+
+.subscription-expired {
+    background-color: var(--text-light-gray);
+    color: var(--text-dark-gray);
+    pointer-events: none;
+}
+
+.subscription-card .offer-expired,
+.subscription-card .offer-active {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    font-size: 12px;
+    background: var(--danger-light-red);
+    padding: 2px 30px;
+    color: var(--text-white);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.subscription-card .offer-active {
+    background-color: var(--success-dark);
+}
+
+.card-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-left .checked {
+    width: 26.67px;
+    height: 26.67px;
+    border: 2px solid var(--text-dark-gray);
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    position: relative;
+}
+
+.card-left .checked::before {
+    position: absolute;
+    content: "";
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background-color: var(--text-dark-gray);
+}
+
+.card-right {
+    font-size: 12px;
+    text-align: end;
+}
+
+.card-right .bold {
+    font-size: var(--text-size);
+}
+
+.subscription-expired .card-right .bold-right {
+    color: var(--text-dark-gray);
+}
+
+.card-right .bold:first-child {
+    margin-left: 5px;
+}
+
+.card-right .bold-right {
+    margin-right: 10px;
+    font-size: 12px;
+    color: var(--dark-color);
+}
+
+.card-right p:nth-child(2) {
+    color: var(--text-dark-gray);
+}
+
+.subscription-card .check {
+    width: 26.67px;
+    height: 26.67px;
+    border: 2px solid var(--text-dark-gray);
+    border-radius: 100%;
+}
+
+.subscription-card img {
+    display: none;
+}
+
+.subscription-card .offer-active {
+    display: none;
+}
+
+/* When Subscription Selected */
+/* ----------------------------------------- */
+.subscription-selected .check {
+    display: none;
+}
+
+.subscription-selected img {
+    display: block;
+}
+
+.subscription-selected .offer-active {
+    display: block;
+}
+
+.subscription-selected {
+    border-color: var(--success-dark);
+    background-color: var(--success-light);
+}
+
+/* ------------------------------------- */
+
+hr {
+    background-color: transparent;
+    border: 1px solid var(--text-dark-gray);
+}
+
+.subscription-fee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.limited-offer {
+    background: var(--alert-border);
+    border-radius: 4px;
+    padding: 12px 20px;
+    color: var(--alert-text);
+    position: relative;
+    z-index: 10;
+    height: 78px;
+}
+
+.limited-offer::after,
+.limited-offer::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 4px);
+    height: 74px;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.limited-offer::after {
+    background: var(--text-white);
+    z-index: -1;
+}
+
+.limited-offer::before {
+    background: var(--alert-fill);
+    z-index: 1;
+}
+
+.limited-offer .clock {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.limited-offer img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.limited-offer .bold:first-child {
+    position: absolute;
+    right: 20px;
+    color: var(--dark-color);
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-btn button {
+    width: 100%;
+    height: 56px;
+    font-weight: bold;
+    background-color: var(--text-white);
+    color: var(--text-white);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-btn button:first-child {
+    border: 2px solid var(--alert-text);
+    color: var(--alert-text);
+}
+
+.form-btn button:nth-child(2) {
+    border: 2px solid var(--success-dark);
+    background-color: var(--success-dark);
+}
+
+.hero-right .razorpay {
+    width: 120px;
+}
