@@ -77,7 +77,7 @@ export default function Form() {
                         <p className='offer-active'>Reommended</p>
                         <span className='check'></span>
                         <img src={select} alt="select" />
-                        <span className='bold'>6 Months Subscrispantion</span>
+                        <span className='bold'>6 Months Subscription</span>
                     </div>
                     <div className='card-right'>
                         <p>Total <span className='bold'> &#8377;{money['6months'].price}</span></p>
